@@ -7,7 +7,7 @@ export default function Services() {
   const [hoveredCard, setHoveredCard] = useState(null)
   const services = [
     {
-      icon: '/icons8-web-50.png',
+      icon: '/icons8-html-50.png',
       title: 'Programming Languages',
       proficiency: 88,
       description:
@@ -113,14 +113,15 @@ export default function Services() {
               <Card className="h-full bg-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300 hover:shadow-xl hover:shadow-black/20 dark:hover:shadow-white/5 hover:scale-105">
                 <CardHeader className="text-center">
                   <motion.div
-                    className="w-16 h-16 mx-auto mb-4 flex items-center justify-center"
+                    className="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg"
                     whileHover={{ rotate: 360 }}
                     transition={{ duration: 0.6 }}
                   >
                     <img
                       src={service.icon}
                       alt={service.title}
-                      className="w-16 h-16 object-contain"
+                      className="w-12 h-12 object-contain"
+                      loading="lazy"
                     />
                   </motion.div>
                   <CardTitle className="text-xl text-gray-900 dark:text-white">{service.title}</CardTitle>
