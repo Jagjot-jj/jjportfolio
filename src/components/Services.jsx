@@ -7,42 +7,42 @@ export default function Services() {
   const [hoveredCard, setHoveredCard] = useState(null)
   const services = [
     {
-      icon: './icons8-web-50.png',
+      icon: '/icons8-web-50.png',
       title: 'Programming Languages',
       proficiency: 88,
       description:
         'C++, JavaScript, C, Python, HTML, CSS, SQL, and Java for solving data structure, development, and analytics problems.',
     },
     {
-      icon: './react-16-svgrepo-com.svg',
+      icon: '/react-16-svgrepo-com.svg',
       title: 'Data Libraries',
       proficiency: 82,
       description:
         'Hands-on with Pandas, Scikit-learn, Matplotlib, Seaborn, and NumPy for analysis, data transformation, and visualization.',
     },
     {
-      icon: './icons8-sql-60.png',
+      icon: '/icons8-sql-60.png',
       title: 'Databases and Data Tools',
       proficiency: 84,
       description:
         'Comfortable with SQL and MySQL for querying and managing datasets in dashboard and application workflows.',
     },
     {
-      icon: './icons8-node-js-32.png',
+      icon: '/icons8-node-js-32.png',
       title: 'Dashboarding and BI',
       proficiency: 86,
       description:
         'Built insight-driven dashboards in Power BI and Excel with slicers, KPIs, and trend charts for business and weather analytics.',
     },
     {
-      icon: './icons8-web-50.png',
+      icon: '/icons8-web-50.png',
       title: 'Web Development',
       proficiency: 85,
       description:
         'Developed responsive web apps like Quiz it Up using HTML, CSS, and JavaScript with mobile-first UX and dynamic interactions.',
     },
     {
-      icon: './icons8-video-editing-64.png',
+      icon: '/icons8-video-editing-64.png',
       title: 'Professional Skills',
       proficiency: 90,
       description:
