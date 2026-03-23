@@ -40,7 +40,7 @@ export default function WorkExperience() {
       description: 'Recognized certifications and coding achievements reflecting strong consistency in problem solving.',
       achievements: [
         { text: 'SQL Advanced by Hackerrank (Mar 2026).', link: 'https://www.hackerrank.com/certificates/iframe/04aced3394ea' },
-        'Data Structures and Algorithms certification by CSE Pathshala (Aug 2025).',
+        { text: 'Data Structures and Algorithms certification by CSE Pathshala (Aug 2025).', link: 'file:///C:/Users/VICTUS/Downloads/summerjj.pdf' },
         'NPTEL online certification in Cloud Computing (Apr 2025).',
         'Solved 150+ questions on LeetCode.',
         '5-star rating in C++ on HackerRank.'
