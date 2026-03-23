@@ -105,11 +105,11 @@ export default function Hero() {
                 asChild
               >
                 <a
-                  href="mailto:jagjots819@gmail.com"
+                  href="https://drive.google.com/drive/folders/1ZakBtOYzDAYaQMtkkCaYAQ67xUs5kPLy?usp=sharing"
                 >
                   <Mail className="mr-2 h-5 w-5" />
                   <EncryptedText
-                    text="Email Me"
+                    text="Resume"
                     revealDelayMs={15}
                     encryptedClassName="text-white/70 dark:text-black/70"
                     revealedClassName="text-white dark:text-black"
