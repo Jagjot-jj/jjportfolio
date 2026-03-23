@@ -39,7 +39,7 @@ export default function WorkExperience() {
       period: '2025 - 2026',
       description: 'Recognized certifications and coding achievements reflecting strong consistency in problem solving.',
       achievements: [
-        'SQL Advanced by Hackerrank (Mar 2026).',
+        { text: 'SQL Advanced by Hackerrank (Mar 2026).', link: 'https://www.hackerrank.com/certificates/iframe/04aced3394ea' },
         'Data Structures and Algorithms certification by CSE Pathshala (Aug 2025).',
         'NPTEL online certification in Cloud Computing (Apr 2025).',
         'Solved 150+ questions on LeetCode.',
@@ -146,7 +146,18 @@ export default function WorkExperience() {
                       {experience.achievements.map((achievement, i) => (
                         <div key={i} className="flex items-start gap-2">
                           <div className="w-1.5 h-1.5 rounded-full bg-gray-400 dark:bg-gray-500 mt-2 flex-shrink-0"></div>
-                          <p className="text-xs text-gray-600 dark:text-gray-400">{achievement}</p>
+                          {typeof achievement === 'string' ? (
+                            <p className="text-xs text-gray-600 dark:text-gray-400">{achievement}</p>
+                          ) : (
+                            <a 
+                              href={achievement.link} 
+                              target="_blank" 
+                              rel="noopener noreferrer" 
+                              className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline"
+                            >
+                              {achievement.text}
+                            </a>
+                          )}
                         </div>
                       ))}
                     </div>
