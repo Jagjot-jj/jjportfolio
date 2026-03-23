@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "lint": "vite build --mode analyze"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
@@ -28,7 +27,6 @@
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
     "baseline-browser-mapping": "^2.9.15",
-    "gh-pages": "^6.3.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
     "terser": "^5.46.0",

@@ -19,7 +19,7 @@ export default function Navbar() {
   const navLinks = [
     { href: '#home', label: 'Home' },
     { href: '#services', label: 'Skills' },
-    { href: '#experience', label: 'Experience' },
+    { href: '#experience', label: 'Education' },
     { href: '#projects', label: 'Projects' },
     { href: '#contact', label: 'Contact' },
   ]
@@ -42,7 +42,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 dark:from-white dark:via-gray-300 dark:to-white bg-clip-text text-transparent"
           >
-            Yash's Portfolio
+            Jagjot Singh Portfolio
           </motion.div>
 
           {/* Desktop Menu */}

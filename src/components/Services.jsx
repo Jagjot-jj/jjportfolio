@@ -7,46 +7,46 @@ export default function Services() {
   const [hoveredCard, setHoveredCard] = useState(null)
   const services = [
     {
-      icon: './react-16-svgrepo-com.svg',
-      title: 'React Dev',
-      proficiency: 90,
+      icon: './icons8-web-50.png',
+      title: 'Programming Languages',
+      proficiency: 88,
       description:
-        'Developed responsive and dynamic web applications using React.js, HTML, CSS, and JavaScript, ensuring cross-browser compatibility and mobile optimization. Collaborated closely with designers to translate UI/UX designs into interactive, user-friendly interfaces.',
+        'C++, JavaScript, C, Python, HTML, CSS, SQL, and Java for solving data structure, development, and analytics problems.',
     },
     {
-      icon: './icons8-node-js-32.png',
-      title: 'Node Js Dev',
-      proficiency: 85,
+      icon: './react-16-svgrepo-com.svg',
+      title: 'Data Libraries',
+      proficiency: 82,
       description:
-        'Developed scalable backend applications using Node.js, Express, and MongoDB. Collaborated with front-end teams to enhance user experience. Ensured code quality through testing and version control.',
+        'Hands-on with Pandas, Scikit-learn, Matplotlib, Seaborn, and NumPy for analysis, data transformation, and visualization.',
     },
     {
       icon: './icons8-sql-60.png',
-      title: 'SQL Dev',
-      proficiency: 80,
+      title: 'Databases and Data Tools',
+      proficiency: 84,
       description:
-        'Developed and optimized SQL queries for data retrieval and manipulation. Designed and maintained database schemas, ensuring data integrity and performance. Collaborated with cross-functional teams.',
-    },
-    {
-      icon: './icons8-video-editing-64.png',
-      title: 'Video Editor',
-      proficiency: 88,
-      description:
-        'Experienced video editor with strong skills in crafting compelling narratives. Proficient in Adobe Premiere Pro, Da Vinci, and After Effects. Successfully managed diverse projects enhancing visual storytelling.',
-    },
-    {
-      icon: './icons8-web-50.png',
-      title: 'Web Dev',
-      proficiency: 92,
-      description:
-        'Dynamic web developer with hands-on experience in building responsive websites and web applications. Proficient in HTML, CSS, JavaScript, and React, with strong focus on user experience and performance.',
+        'Comfortable with SQL and MySQL for querying and managing datasets in dashboard and application workflows.',
     },
     {
       icon: './icons8-node-js-32.png',
-      title: 'API Development',
+      title: 'Dashboarding and BI',
+      proficiency: 86,
+      description:
+        'Built insight-driven dashboards in Power BI and Excel with slicers, KPIs, and trend charts for business and weather analytics.',
+    },
+    {
+      icon: './icons8-web-50.png',
+      title: 'Web Development',
       proficiency: 85,
       description:
-        'Expert in building RESTful APIs and backend services using Node.js, Express, and MongoDB. Experienced in API testing with Postman and implementing robust data collection solutions.',
+        'Developed responsive web apps like Quiz it Up using HTML, CSS, and JavaScript with mobile-first UX and dynamic interactions.',
+    },
+    {
+      icon: './icons8-video-editing-64.png',
+      title: 'Professional Skills',
+      proficiency: 90,
+      description:
+        'Strong in time management, active listening, problem-solving, and adaptability while working on projects and collaborative tasks.',
     },
     
   ]

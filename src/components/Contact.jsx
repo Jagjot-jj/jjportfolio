@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { Send, Mail, Phone, MapPin, CheckCircle2 } from "lucide-react";
+import { Send, Mail, Phone, MapPin, CheckCircle2, Linkedin, Github } from "lucide-react";
 import { LampContainer } from "@/components/ui/lamp";
 
 export default function Contact() {
@@ -55,20 +55,32 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "yashkhope01@gmail.com",
-      href: "mailto:yashkhope01@gmail.com",
+      value: "jagjots819@gmail.com",
+      href: "mailto:jagjots819@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+91 8975905912",
-      href: "tel:+918975905912",
+      value: "+91 9144880416",
+      href: "tel:+919144880416",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "India",
+      value: "Punjab / West Bengal, India",
       href: "#",
+    },
+    {
+      icon: Linkedin,
+      title: "LinkedIn",
+      value: "linkedin.com/in/jagjot-singh-jj",
+      href: "https://linkedin.com/in/jagjot-singh-jj",
+    },
+    {
+      icon: Github,
+      title: "GitHub",
+      value: "github.com/Jagjot-jj",
+      href: "https://github.com/Jagjot-jj",
     },
   ];
 
@@ -93,7 +105,7 @@ export default function Contact() {
             Contact Me
           </h2>
           <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
-            Have a question or want to work together? Feel free to reach out!
+            Open to internships, project collaborations, and opportunities in software development and analytics.
           </p>
         </motion.div>
 
@@ -109,7 +121,7 @@ export default function Contact() {
               <CardHeader>
                 <CardTitle className="text-2xl text-gray-900 dark:text-white">Send a Message</CardTitle>
                 <CardDescription className="text-gray-600 dark:text-gray-300">
-                  Fill out the form below and I'll get back to you as soon as possible.
+                  Share your project or role details and I will get back as soon as possible.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -121,7 +133,7 @@ export default function Contact() {
                   >
                     <CheckCircle2 className="h-16 w-16 text-green-500" />
                     <p className="text-xl font-semibold text-gray-900 dark:text-white">Message Sent!</p>
-                    <p className="text-gray-600 dark:text-gray-300">Thank you for reaching out. I'll respond soon.</p>
+                    <p className="text-gray-600 dark:text-gray-300">Thank you for reaching out. I will respond soon.</p>
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
@@ -222,7 +234,7 @@ export default function Contact() {
               <CardHeader>
                 <CardTitle className="text-2xl text-gray-900 dark:text-white">Contact Information</CardTitle>
                 <CardDescription className="text-gray-600 dark:text-gray-300">
-                  You can also reach me through these channels
+                  You can also connect with me using these channels.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -252,9 +264,9 @@ export default function Contact() {
 
             <Card className="bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-900 dark:to-black border-none text-white">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4">Let's Work Together!</h3>
+                <h3 className="text-2xl font-bold mb-4">Let us Build Something Impactful</h3>
                 <p className="text-gray-300 mb-6">
-                  I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                  I enjoy working on practical products, dashboards, and systems that solve real-world problems.
                 </p>
                 <div className="flex gap-4">
                   <Button
@@ -262,8 +274,8 @@ export default function Contact() {
                     asChild
                     className="bg-white text-gray-900 hover:bg-gray-100"
                   >
-                    <a href="https://docs.google.com/document/d/1_HKdaa-rD9a8OFiyxxMR2VKimcPYM7Z8/edit" download>
-                      Download Resume
+                    <a href="https://github.com/Jagjot-jj" target="_blank" rel="noopener noreferrer">
+                      Visit GitHub
                     </a>
                   </Button>
                 </div>

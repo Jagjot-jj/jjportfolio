@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card'
-import { Building2, Users, Briefcase, Calendar } from 'lucide-react'
+import { GraduationCap, BookOpen, Award, Trophy, Calendar } from 'lucide-react'
 import { LampContainer } from './ui/lamp'
 import { useState } from 'react'
 
@@ -9,44 +9,57 @@ export default function WorkExperience() {
   const [hoveredCard, setHoveredCard] = useState(null)
   const experiences = [
     {
-      icon: Building2,
-      title: 'Backend Web Developer',
-      company: 'Techlathe IT Solutions',
-      period: 'Oct 2023 - Dec 2023',
-      description: 'Built RESTful APIs using Node.js and MongoDB, and tested endpoints via Postman for data collection modules.',
+      icon: GraduationCap,
+      title: 'Education',
+      company: 'Lovely Professional University, Punjab',
+      period: 'Nov 2025 - Present',
+      description: 'Bachelor of Technology in Computer Science and Engineering with CGPA: 7.17.',
       achievements: [
-        'Implemented robust data collection and management solutions leveraging MongoDB, demonstrating core MERN stack proficiency.',
-        'Managed the end-to-end backend development for projects, ensuring seamless server-side logic and data integrity.',
-        'Developed scalable backend solutions with focus on performance and security.'
+        'India International School, West Bengal: Intermediate in Science (75.2%), Apr 2022 - Mar 2023.',
+        'India International School, West Bengal: Matriculation (80.6%), Apr 2020 - Mar 2021.'
       ],
-      color: 'from-blue-900 to-blue-700'
+      color: 'from-blue-900 to-blue-700',
     },
     {
-      icon: Users,
-      title: 'Community Manager',
-      company: 'GDGoC ZCOER',
-      period: '2022 - Present',
-      description: 'Managing community events and fostering developer engagement in the Google Developer Group community.',
+      icon: BookOpen,
+      title: 'Training',
+      company: 'CSE Pathshala',
+      period: 'Jun 2025 - Aug 2025',
+      description: 'Data Structure and Algorithms training focused on interactive web pages and optimized application behavior.',
       achievements: [
-        'Organized and managed GDG community events including WOW (Wonders of Wonders) and CCD (Cloud Community Days).',
-        'Built and maintained a strong developer community with regular meetups and workshops.',
-        'Facilitated knowledge sharing and networking opportunities for developers.'
+        'Applied DSA concepts to improve application performance and content updates.',
+        'Strengthened event-handling logic to improve responsiveness and user engagement.'
       ],
-      color: 'from-green-900 to-green-700'
+      color: 'from-green-900 to-green-700',
     },
     {
-      icon: Briefcase,
-      title: 'Freelance Developer',
-      company: 'Open for Freelancing',
-      period: 'Available',
-      description: 'Available for freelance projects and collaborations in web development and backend solutions.',
+      icon: Award,
+      title: 'Certificates and Achievements',
+      company: 'Hackerrank, CSE Pathshala, NPTEL',
+      period: '2025 - 2026',
+      description: 'Recognized certifications and coding achievements reflecting strong consistency in problem solving.',
       achievements: [
-        'Open to taking on new projects and challenges.',
-        'Flexible availability for short-term and long-term projects.',
-        'Specialized in MERN stack development and API design.'
+        'SQL Advanced by Hackerrank (Mar 2026).',
+        'Data Structures and Algorithms certification by CSE Pathshala (Aug 2025).',
+        'NPTEL online certification in Cloud Computing (Apr 2025).',
+        'Solved 150+ questions on LeetCode.',
+        '5-star rating in C++ on HackerRank.'
       ],
-      color: 'from-purple-900 to-purple-700'
-    }
+      color: 'from-purple-900 to-purple-700',
+    },
+    {
+      icon: Trophy,
+      title: 'Current Focus',
+      company: 'Software Development and Analytics',
+      period: 'Present',
+      description: 'Building practical projects in analytics and web development while strengthening algorithmic fundamentals.',
+      achievements: [
+        'Applying C++, JavaScript, and SQL in project work.',
+        'Creating dashboard-driven insights with Power BI and Excel.',
+        'Improving coding fluency through consistent DSA practice.'
+      ],
+      color: 'from-slate-900 to-slate-700',
+    },
   ]
 
   const containerVariants = {
@@ -88,9 +101,9 @@ export default function WorkExperience() {
           className="text-center mb-16"
         >
           <span className="text-gray-600 dark:text-gray-400 text-sm font-medium">My Journey</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-2">Work Experience</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-2">Education and Credentials</h2>
           <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
-            Professional experience in backend development, community management, and freelance projects.
+            A snapshot of education, training, certificates, achievements, and current areas of growth.
           </p>
         </motion.div>
 
@@ -99,7 +112,7 @@ export default function WorkExperience() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto"
         >
           {experiences.map((experience, index) => {
             const Icon = experience.icon

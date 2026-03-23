@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Button } from './ui/button'
-import { Github, ExternalLink, Code2, Database, Video, ShoppingCart, FileText } from 'lucide-react'
+import { Github, ExternalLink, CloudSun, Table2, LibraryBig, BrainCircuit } from 'lucide-react'
 import { LampContainer } from './ui/lamp'
 import { useState } from 'react'
 
@@ -9,40 +9,40 @@ export default function Projects() {
   const [hoveredCard, setHoveredCard] = useState(null)
   const projects = [
     {
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website built with HTML, CSS showcasing my work and skills with elegant design and smooth animations.',
+      title: 'Weather Forecast and Analysis Dashboard',
+      description: 'Built an interactive Power BI dashboard to visualize temperature, rainfall, wind speed, AQI, and city-wise weather trends over time.',
+      tech: ['Power BI', 'DAX', 'Data Visualization'],
+      github: 'https://github.com/Jagjot-jj',
+      demo: '#',
+      icon: CloudSun,
+      color: 'from-sky-900 to-cyan-700'
+    },
+    {
+      title: 'Hotel Dashboard',
+      description: 'Created a customer feedback analytics dashboard in Excel to track operational performance, bug trends, and resource utilization.',
+      tech: ['Microsoft Excel', 'Dashboarding', 'Analytics'],
+      github: 'https://github.com/Jagjot-jj',
+      demo: '#',
+      icon: Table2,
+      color: 'from-emerald-900 to-green-700'
+    },
+    {
+      title: 'Library Management System',
+      description: 'Implemented a menu-driven C++ system for adding, deleting, issuing, returning, and searching books with real-time status tracking.',
+      tech: ['C++', 'STL', 'DSA'],
+      github: 'https://github.com/Jagjot-jj',
+      demo: '#',
+      icon: LibraryBig,
+      color: 'from-violet-900 to-purple-700'
+    },
+    {
+      title: 'Quiz it Up',
+      description: 'Designed a responsive browser-based quiz app with dynamic question loading, real-time scoring, and immediate user feedback.',
       tech: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/Yashkhope01/Portfolio',
-      demo: 'https://yashkhope01.github.io/Portfolio/',
-      icon: Code2,
-      color: 'from-slate-900 to-slate-700'
-    },
-    {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce application built with Django framework featuring product management, user authentication, and payment integration.',
-      tech: ['Python', 'Django', 'SQLite'],
-      github: 'https://github.com/Yashkhope01/Django',
+      github: 'https://github.com/Jagjot-jj',
       demo: '#',
-      icon: ShoppingCart,
-      color: 'from-gray-900 to-gray-700'
-    },
-    {
-      title: 'Blog Application',
-      description: 'Dynamic blogging platform with user authentication, CRUD operations, and rich text editing built with modern JavaScript frameworks.',
-      tech: ['JavaScript', 'Node.js', 'Express'],
-      github: 'https://github.com/Yashkhope01/Blog',
-      demo: '#',
-      icon: FileText,
-      color: 'from-stone-900 to-stone-700'
-    },
-    {
-      title: 'Auction Platform',
-      description: 'Real-time auction system with bidding functionality, user management, and live updates built with JavaScript and modern web technologies.',
-      tech: ['JavaScript', 'WebSocket', 'MongoDB'],
-      github: 'https://github.com/Yashkhope01/Auction',
-      demo: '#',
-      icon: ShoppingCart,
-      color: 'from-slate-900 to-slate-700'
+      icon: BrainCircuit,
+      color: 'from-amber-900 to-orange-700'
     },
   ]
 
@@ -87,7 +87,7 @@ export default function Projects() {
           <span className="text-gray-600 dark:text-gray-400 text-sm font-medium">My Work</span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-2">Featured Projects</h2>
           <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
-            Here are some of my projects from GitHub showcasing full-stack development, algorithms, and creative solutions.
+            Project highlights across Power BI, Excel analytics, C++ systems, and responsive web development.
           </p>
         </motion.div>
 
@@ -195,7 +195,7 @@ export default function Projects() {
             className="rounded-full border-gray-800 dark:border-gray-700 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
             asChild
           >
-            <a href="https://github.com/Yashkhope01" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Jagjot-jj" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-5 w-5" />
               View More on GitHub
             </a>

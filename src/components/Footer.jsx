@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Linkedin, Instagram, Github, Twitter, Phone, Mail } from 'lucide-react'
+import { Linkedin, Github, Phone, Mail } from 'lucide-react'
 import CoffeeCounter from './CoffeeCounter'
 
 export default function Footer() {
@@ -7,22 +7,20 @@ export default function Footer() {
     {
       title: 'Social',
       links: [
-        { name: 'LinkedIn', href: 'https://www.linkedin.com/in/yash-khope-25b095275/', icon: Linkedin },
-        { name: 'Instagram', href: 'https://www.instagram.com/y.k_yash_01', icon: Instagram },
+        { name: 'LinkedIn', href: 'https://linkedin.com/in/jagjot-singh-jj', icon: Linkedin },
       ],
     },
     {
       title: 'Code',
       links: [
-        { name: 'Github', href: 'https://github.com/Yashkhope01', icon: Github },
-        { name: 'Twitter', href: 'https://x.com/k_yash_03', icon: Twitter },
+        { name: 'GitHub', href: 'https://github.com/Jagjot-jj', icon: Github },
       ],
     },
     {
       title: 'Contact',
       links: [
-        { name: '+91 8975905912', href: 'tel:+918975905912', icon: Phone },
-        { name: 'yashkhope01@gmail.com', href: 'mailto:yashkhope01@gmail.com', icon: Mail },
+        { name: '+91 9144880416', href: 'tel:+919144880416', icon: Phone },
+        { name: 'jagjots819@gmail.com', href: 'mailto:jagjots819@gmail.com', icon: Mail },
       ],
     },
   ]
@@ -40,7 +38,7 @@ export default function Footer() {
             className="space-y-2"
           >
             <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-300 dark:to-white bg-clip-text text-transparent">
-              Yash's Developer
+              Jagjot Singh
             </h2>
             <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-300 dark:to-white bg-clip-text text-transparent">
               Portfolio
@@ -100,7 +98,7 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-12 pt-8 border-t border-gray-300 dark:border-purple-500/30 text-center text-gray-600 dark:text-gray-400 text-sm"
         >
-          © {new Date().getFullYear()} Yash Khope. All rights reserved.
+          © {new Date().getFullYear()} Jagjot Singh. All rights reserved.
         </motion.div>
       </div>
     </footer>

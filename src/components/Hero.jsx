@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Download, Github } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "./ui/button"
 import { EncryptedText } from "./ui/encrypted-text"
 
@@ -25,7 +25,7 @@ export default function Hero() {
               className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white relative inline-block"
             >
               <EncryptedText
-                text="Hi, I am Yash"
+                text="Hi, I am Jagjot Singh"
                 revealDelayMs={80}
                 encryptedClassName="text-gray-400 dark:text-gray-600"
                 revealedClassName="text-gray-900 dark:text-white"
@@ -50,10 +50,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.25 }}
-              className="text-3xl md:text-5xl text-gray-800 dark:text-white"
+              className="text-xl md:text-3xl text-gray-800 dark:text-white"
             >
               <EncryptedText
-                text="and I am a passionate"
+                text="B.Tech CSE student at Lovely Professional University"
                 revealDelayMs={110}
                 encryptedClassName="text-gray-400 dark:text-gray-600"
                 revealedClassName="text-gray-800 dark:text-white"
@@ -67,7 +67,7 @@ export default function Hero() {
               className="text-3xl md:text-5xl font-bold relative bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-200 dark:to-white bg-clip-text text-transparent"
             >
               <EncryptedText
-                text="Web Developer & Video Editor"
+                text="Aspiring Data Engineer & AI Enthusiast"
                 revealDelayMs={140}
                 encryptedClassName="text-gray-500 dark:text-gray-500"
                 revealedClassName="bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-200 dark:to-white bg-clip-text text-transparent"
@@ -77,10 +77,10 @@ export default function Hero() {
                 initial={{ opacity: 0, x: 16 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1 }}
-                className="hidden lg:block absolute -right-32 top-0 rotate-12"
+                className="hidden lg:block absolute -right-48 top-0 rotate-12"
                 style={{ fontFamily: "Caveat, cursive" }}
               >
-                <p className="text-blue-400 text-2xl">Yes, I edit in 4K! 🎬</p>
+                <p className="text-blue-400 text-2xl">DSA + analytics </p>
                 <svg
                   width="60"
                   height="40"
@@ -105,12 +105,11 @@ export default function Hero() {
                 asChild
               >
                 <a
-                  href="https://drive.google.com/file/d/1YI7uvMSLbObXa-p4Sj-32DFU00ie5pFD/view?usp=sharing"
-                  download
+                  href="mailto:jagjots819@gmail.com"
                 >
-                  <Download className="mr-2 h-5 w-5" />
+                  <Mail className="mr-2 h-5 w-5" />
                   <EncryptedText
-                    text="Download Resume"
+                    text="Email Me"
                     revealDelayMs={15}
                     encryptedClassName="text-white/70 dark:text-black/70"
                     revealedClassName="text-white dark:text-black"
@@ -124,13 +123,33 @@ export default function Hero() {
                 asChild
               >
                 <a
-                  href="https://github.com/Yashkhope01"
+                  href="https://github.com/Jagjot-jj"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Github className="mr-2 h-5 w-5" />
                   <EncryptedText
                     text="Visit GitHub"
+                    revealDelayMs={15}
+                    encryptedClassName="text-gray-500 dark:text-gray-500"
+                    revealedClassName="text-gray-900 dark:text-gray-300"
+                  />
+                </a>
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="rounded-full border-gray-900 dark:border-gray-300 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-900"
+                asChild
+              >
+                <a
+                  href="https://linkedin.com/in/jagjot-singh-jj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="mr-2 h-5 w-5" />
+                  <EncryptedText
+                    text="LinkedIn"
                     revealDelayMs={15}
                     encryptedClassName="text-gray-500 dark:text-gray-500"
                     revealedClassName="text-gray-900 dark:text-gray-300"
@@ -149,7 +168,7 @@ export default function Hero() {
           >
             <motion.div className="relative z-10">
                 <motion.img
-                  src="./me.png"
+                  src="/me.jpeg"
                   alt="Developer coding"
                   width="400"
                   height="400"
