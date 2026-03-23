@@ -120,7 +120,7 @@ export default function Services() {
                     <img
                       src={service.icon}
                       alt={service.title}
-                      className="w-16 h-16 filter brightness-0 invert-0 dark:brightness-0 dark:invert"
+                      className="w-16 h-16 object-contain"
                     />
                   </motion.div>
                   <CardTitle className="text-xl text-gray-900 dark:text-white">{service.title}</CardTitle>
